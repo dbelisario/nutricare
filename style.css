@@ -20,7 +20,7 @@ body { font-family: var(--font-family); margin: 0; line-height: 1.6; color: var(
 .main-header .container { display: flex; justify-content: space-between; align-items: center; }
 .main-header .logo { font-size: 1.75rem; font-weight: 700; color: var(--primary-color); }
 .main-header nav a { margin-left: 20px; text-decoration: none; color: var(--dark-color); font-weight: 700; }
-.main-footer { background: var(--dark-color); color: #fff; text-align: center; padding: 1.5rem 0; margin-top: 40px; }
+.main-footer { background: var(--dark-color); color: #fff; text-align: center; padding: 1.5rem 0; }
 .main-footer .disclaimer { font-size: 0.8rem; opacity: 0.7; }
 .social-icons { margin-bottom: 1rem; }
 .social-icons a { color: white; text-decoration: none; margin: 0 10px; font-weight: bold; border: 1px solid white; border-radius: 50%; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; }
