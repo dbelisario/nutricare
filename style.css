@@ -73,3 +73,62 @@ li{ font-size: 1.1rem; }
 .doctor-card img { border-radius: 50%; margin-bottom: 1rem; width: 100px; height: 100px; }
 .doctor-card h4 { margin-bottom: 0.25rem; }
 .doctor-card p { margin-top: 0; color: #6c757d; }
+
+/* --- Estilos para FAQ --- */
+.faq-accordion {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.faq-question {
+    background-color: #fff;
+    color: var(--dark-color);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.faq-question::after {
+    content: '+'; /* Icono de más */
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+    content: "–"; /* Icono de menos */
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-question:hover {
+    background-color: #f8f9fa;
+}
+
+.faq-answer {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-answer p {
+    margin-top: 0;
+    padding-bottom: 18px;
+}
+
