@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutricare - Test de Salud Prostática (IPSS)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">Nutricare</div>
+            <nav>
+                <a href="#soluciones">Nuestras Soluciones</a>
+                <a href="#medicos">Médicos Colaboradores</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>¿Sientes que algo no anda bien con tu salud urinaria?</h1>
+                <p>La Escala Internacional de Síntomas Prostáticos (IPSS) es una herramienta validada para hombres que te ayuda a medir la gravedad de tus síntomas. <br><strong>Realiza el test en 3 minutos. Es anónimo y confidencial.</strong></p>
+                <button id="start-quiz-btn" class="btn btn-large">Hacer el Test Ahora</button>
+            </div>
+        </section>
+
+        <!-- Contenedor del Cuestionario Interactivo (inicialmente oculto) -->
+        <section id="quiz-section" class="quiz-container" style="display: none;">
+            <div class="container">
+                <div id="quiz-box" class="quiz-box">
+                    <div id="progress-bar-container">
+                        <div id="progress-bar"></div>
+                    </div>
+                    <div id="question-container">
+                        <!-- La pregunta actual se cargará aquí -->
+                    </div>
+                    <div id="quiz-navigation">
+                        <button id="prev-btn" class="btn btn-secondary">Anterior</button>
+                        <button id="next-btn" class="btn">Siguiente</button>
+                    </div>
+                </div>
+                <div id="quiz-results" class="results-panel" style="display: none;">
+                    <!-- El resultado final se mostrará aquí -->
+                </div>
+            </div>
+        </section>
+        
+        <section id="medicos" class="doctors-section" style="display: none;">
+            <div class="container">
+                <h2>Te recomendamos consultar un especialista</h2>
+                <p>Tu puntuación sugiere que una consulta médica sería beneficiosa. Agenda una cita directamente con uno de nuestros urólogos colaboradores.</p>
+                <div class="doctors-list">
+                    <div class="doctor-card">
+                        <img src="https://via.placeholder.com/100" alt="Foto del Dr. Augusto Benavides">
+                        <h4>Dr. Augusto Benavides</h4>
+                        <p>Urólogo Especialista</p>
+                        <button class="btn btn-secondary" onclick="window.open('URL_CALENDLY_DOCTOR_1', '_blank')">Agendar Cita</button>
+                    </div>
+                     <div class="doctor-card">
+                        <img src="https://via.placeholder.com/100" alt="Foto de la Dra. Yaiza Aguero">
+                        <h4>Dra. Yaiza Aguero</h4>
+                        <p>Uróloga Especialista</p>
+                        <button class="btn btn-secondary" onclick="window.open('URL_CALENDLY_DOCTOR_2', '_blank')">Agendar Cita</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2025 Nutricare. Todos los derechos reservados. Este test es una herramienta de orientación y no reemplaza un diagnóstico médico profesional.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
