@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevBtn = document.getElementById('prev-btn');
     const resultsPanel = document.getElementById('quiz-results');
     const doctorsSection = document.getElementById('medicos');
+    const faqSalud = document.getElementById('faq');
 
     // --- FUNCIONES ---
     function startQuiz(event) {
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mainHeader.style.display = 'none';
         heroSection.style.display = 'none';
         contentWrapper.style.display = 'none';
+        faqSalud.style.display = 'none';
 
         quizSection.style.display = 'block';
         quizBox.style.display = 'block'; 
@@ -145,6 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
         resultsPanel.style.display = 'block';
+        faqSalud.style.display = 'block';
         
         if(doctorsSection.style.display === 'block') {
             doctorsSection.scrollIntoView({ behavior: 'smooth' });
