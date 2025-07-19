@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const userAnswers = {};
 
     // --- ELEMENTOS DEL DOM ---
+    const quizHeader = document.getElementById('quiz-header'); 
     const mainHeader = document.getElementById('main-header');
     const heroSection = document.getElementById('hero');
     const contentWrapper = document.getElementById('content-wrapper');
@@ -39,11 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
         contentWrapper.style.display = 'none';
         faqSalud.style.display = 'none';
 
+        quizHeader.style.display = 'block';
         quizSection.style.display = 'block';
         quizBox.style.display = 'block'; 
         
-        quizBox.style.display = 'block';
-        quizSection.scrollIntoView({ behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         displayQuestion();
     }
 
