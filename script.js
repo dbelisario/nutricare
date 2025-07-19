@@ -36,6 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
         mainHeader.style.display = 'none';
         heroSection.style.display = 'none';
         contentWrapper.style.display = 'none';
+
+        quizSection.style.display = 'block';
+        quizBox.style.display = 'block'; 
         
         quizBox.style.display = 'block';
         quizSection.scrollIntoView({ behavior: 'smooth' });
