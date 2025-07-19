@@ -151,6 +151,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const faqAnswer = button.nextElementSibling;
+
+        button.classList.toggle('active');
+
+        if (button.classList.contains('active')) {
+            faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px";
+        } else {
+            faqAnswer.style.maxHeight = 0;
+        } 
+    });
+});
+
+    
+
     // --- EVENT LISTENERS ---
     startQuizBtn.addEventListener('click', startQuiz);
     prevBtn.addEventListener('click', handlePrev);
