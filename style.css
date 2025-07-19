@@ -14,8 +14,8 @@
 html { scroll-behavior: smooth; }
 body { font-family: var(--font-family); margin: 0; line-height: 1.6; color: var(--dark-color); background-color: #fff; }
 .container { max-width: 960px; margin: auto; padding: 0 20px; }
-p{font-size: 1.2rem;}
-li{font-size:1.1rem;}
+p{ font-size: 1.2rem; }
+li{ font-size: 1.1rem; }
 
 /* --- Header & Footer --- */
 .main-header { background: #fff; padding: 1rem 0; border-bottom: 1px solid #dee2e6; position: sticky; top: 0; z-index: 1000; }
