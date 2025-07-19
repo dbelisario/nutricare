@@ -18,6 +18,18 @@ p{ font-size: 1.2rem; }
 li{ font-size: 1.1rem; }
 
 /* --- Header & Footer --- */
+#quiz-header {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+#quiz-header .logo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: inline-block; /* Asegura que el centrado funcione bien */
+}
 .main-header { background: #fff; padding: 1rem 0; border-bottom: 1px solid #dee2e6; position: sticky; top: 0; z-index: 1000; }
 .main-header .container { display: flex; justify-content: space-between; align-items: center; }
 .main-header .logo { font-size: 1.75rem; font-weight: 700; color: var(--primary-color); }
