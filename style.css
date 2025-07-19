@@ -42,7 +42,7 @@ body { font-family: var(--font-family); margin: 0; line-height: 1.6; color: var(
 .btn-secondary { background-color: #6c757d; }
 
 /* --- Cuestionario Interactivo --- */
-#quiz-section { display: none; padding: 3rem 0; }
+.quiz-container { padding: 3rem 0; }
 .quiz-box { background: #fff; border: 1px solid #dee2e6; border-radius: 12px; padding: 2rem 2.5rem; max-width: 700px; margin: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
 #progress-bar-container { width: 100%; background-color: #e9ecef; border-radius: 50px; margin-bottom: 2rem; }
 #progress-bar { width: 0%; height: 10px; background-color: var(--primary-color); border-radius: 50px; transition: width 0.4s ease; }
