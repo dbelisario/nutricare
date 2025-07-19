@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutricare - Test de Salud Prostática (IPSS)</title>
+    <title>UroSalud para Todos - Test de Síntomas Prostáticos (IPSS)</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,60 +11,83 @@
 </head>
 <body>
 
-    <header class="main-header">
+    <header id="main-header" class="main-header">
         <div class="container">
-            <div class="logo">Nutricare</div>
+            <div class="logo">UroSalud</div>
             <nav>
-                <a href="#soluciones">Nuestras Soluciones</a>
-                <a href="#medicos">Médicos Colaboradores</a>
-                <a href="#">Contacto</a>
+                <a href="#info-hpb">¿Qué es la HPB?</a>
+                <a href="#sintomas">Síntomas</a>
+                <a href="#medicos">Médicos</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
+        <!-- SECCIÓN DE BIENVENIDA (HERO) -->
+        <section id="hero" class="hero">
             <div class="container">
-                <h1>¿Sientes que algo no anda bien con tu salud urinaria?</h1>
-                <p>La Escala Internacional de Síntomas Prostáticos (IPSS) es una herramienta validada para hombres que te ayuda a medir la gravedad de tus síntomas. <br><strong>Realiza el test en 3 minutos. Es anónimo y confidencial.</strong></p>
-                <button id="start-quiz-btn" class="btn btn-large">Hacer el Test Ahora</button>
+                <h1>¿Síntomas al orinar? Podría ser Hiperplasia Prostática Benigna (HPB)</h1>
+                <p>Descubre la gravedad de tus síntomas con el test IPSS validado internacionalmente. Es rápido, anónimo y el primer paso para recuperar tu bienestar.</p>
+                <a href="#quiz-section" id="start-quiz-btn" class="btn btn-large">Realizar el Test Ahora</a>
             </div>
         </section>
 
-        <!-- Contenedor del Cuestionario Interactivo (inicialmente oculto) -->
-        <section id="quiz-section" class="quiz-container" style="display: none;">
+        <!-- SECCIÓN DE CONTENIDO INFORMATIVO SOBRE HPB -->
+        <div id="content-wrapper">
+            <section id="info-hpb" class="content-section">
+                <div class="container">
+                    <h2>Entendiendo la Hiperplasia Prostática Benigna (HPB)</h2>
+                    <p>La hiperplasia prostática benigna (HPB) es una condición que se vuelve más frecuente a medida que los hombres envejecen. Esta afección, conocida también como agrandamiento de la próstata, afecta a una glándula pequeña localizada debajo de la vejiga, cuya función principal es contribuir en la producción del semen. Con el paso del tiempo, es común que esta glándula aumente de tamaño.</p>
+                    <p>El crecimiento prostático puede generar molestias al dificultar el paso de la orina desde la vejiga. Esto, a su vez, puede ocasionar complicaciones urinarias, vesicales o incluso afectar los riñones.</p>
+                </div>
+            </section>
+
+            <section id="sintomas" class="content-section bg-light">
+                <div class="container">
+                    <h2>Principales Síntomas</h2>
+                    <p>Entre los signos más comunes de esta condición se encuentran:</p>
+                    <ul class="symptom-list">
+                        <li>Necesidad urgente o frecuente de orinar, especialmente durante la noche.</li>
+                        <li>Dificultad para iniciar la micción (orinar).</li>
+                        <li>Flujo urinario débil o interrumpido.</li>
+                        <li>Sensación de vaciado incompleto de la vejiga.</li>
+                        <li>Goteo postmiccional.</li>
+                    </ul>
+                    <p><strong>¿Cuándo consultar al médico?</strong> Se recomienda acudir a un profesional si los síntomas se vuelven molestos o si obtienes un resultado superior a 7 en el siguiente test.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contenedor del Cuestionario Interactivo -->
+        <section id="quiz-section" class="quiz-container">
             <div class="container">
-                <div id="quiz-box" class="quiz-box">
+                <div id="quiz-box" class="quiz-box" style="display: none;">
                     <div id="progress-bar-container">
                         <div id="progress-bar"></div>
                     </div>
-                    <div id="question-container">
-                        <!-- La pregunta actual se cargará aquí -->
-                    </div>
+                    <div id="question-container"></div>
                     <div id="quiz-navigation">
                         <button id="prev-btn" class="btn btn-secondary">Anterior</button>
-                        <button id="next-btn" class="btn">Siguiente</button>
                     </div>
                 </div>
-                <div id="quiz-results" class="results-panel" style="display: none;">
-                    <!-- El resultado final se mostrará aquí -->
-                </div>
+                <div id="quiz-results" class="results-panel" style="display: none;"></div>
             </div>
         </section>
         
+        <!-- SECCIÓN DE MÉDICOS (SE MUESTRA CONDICIONALMENTE) -->
         <section id="medicos" class="doctors-section" style="display: none;">
             <div class="container">
-                <h2>Te recomendamos consultar un especialista</h2>
+                <h2>Consulta con un Médico Referente</h2>
                 <p>Tu puntuación sugiere que una consulta médica sería beneficiosa. Agenda una cita directamente con uno de nuestros urólogos colaboradores.</p>
                 <div class="doctors-list">
                     <div class="doctor-card">
-                        <img src="https://via.placeholder.com/100" alt="Foto del Dr. Augusto Benavides">
+                        <img src="https://via.placeholder.com/100" alt="Foto del Dr.">
                         <h4>Dr. Augusto Benavides</h4>
                         <p>Urólogo Especialista</p>
                         <button class="btn btn-secondary" onclick="window.open('URL_CALENDLY_DOCTOR_1', '_blank')">Agendar Cita</button>
                     </div>
                      <div class="doctor-card">
-                        <img src="https://via.placeholder.com/100" alt="Foto de la Dra. Yaiza Aguero">
+                        <img src="https://via.placeholder.com/100" alt="Foto de la Dra.">
                         <h4>Dra. Yaiza Aguero</h4>
                         <p>Uróloga Especialista</p>
                         <button class="btn btn-secondary" onclick="window.open('URL_CALENDLY_DOCTOR_2', '_blank')">Agendar Cita</button>
@@ -77,7 +100,14 @@
 
     <footer class="main-footer">
         <div class="container">
-            <p>© 2025 Nutricare. Todos los derechos reservados. Este test es una herramienta de orientación y no reemplaza un diagnóstico médico profesional.</p>
+            <div class="social-icons">
+                <!-- Reemplazar # con los enlaces reales -->
+                <a href="#" title="Facebook">FB</a>
+                <a href="#" title="Instagram">IG</a>
+                <a href="#" title="LinkedIn">LI</a>
+            </div>
+            <p>© 2025 UroSalud. Todos los derechos reservados.</p>
+            <p class="disclaimer">Este test es una herramienta de orientación y no reemplaza un diagnóstico médico profesional.</p>
         </div>
     </footer>
 
