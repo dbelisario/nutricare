@@ -33,6 +33,7 @@ li{ font-size: 1.1rem; }
 .hero p { font-size: 1.4rem; color: #6c757d; margin-bottom: 2rem; }
 
 .content-section { padding: 3rem 0; }
+#quiz-section { display:none;}
 .content-section h2 { text-align: center; font-size: 2rem; margin-bottom: 2rem; }
 .content-section h3 { text-align: center; font-size: 1.7rem; margin-bottom: 2rem; }
 .bg-light { background-color: var(--light-color); }
