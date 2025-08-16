@@ -121,12 +121,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let severity, message, resultClass;
 
-        if (totalScore <= 7) {
+        if (totalScore <= 0) {
+            severity = "SIN SINTOMATOLOGÍA";
+            message = "Tus resultados indican que no presentas síntomas. Es una buena señal, pero es importante seguir monitoreando tu salud.";
+            resultClass = 'results-optimo';
+            doctorsSection.style.display = 'block';
+        } else if (totalScore <= 7){
             severity = "SINTOMATOLOGÍA LEVE";
             message = "Tus resultados indican síntomas leves. Es una buena señal, pero es importante seguir monitoreando tu salud.";
             resultClass = 'results-mild';
-            doctorsSection.style.display = 'none';
-        } else if (totalScore <= 19) {
+            doctorsSection.style.display = 'block';
+        }else if (totalScore <= 19) {
             severity = "SINTOMATOLOGÍA MODERADA";
             message = "Tus resultados indican síntomas moderados. Te recomendamos encarecidamente que consultes a un especialista para una evaluación.";
             resultClass = 'results-moderate';
@@ -175,3 +180,4 @@ document.addEventListener('DOMContentLoaded', () => {
     startQuizBtn.addEventListener('click', startQuiz);
     prevBtn.addEventListener('click', handlePrev);
 });
+
