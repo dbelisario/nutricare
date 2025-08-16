@@ -92,7 +92,7 @@ li{ font-size: 1.1rem; }
 .doctor-card h4 { margin-bottom: 0.25rem; }
 .doctor-card p { margin-top: 0; color: #6c757d; }
 .doctor-btn { background: white; color: var(--primary-color); border: 1px solid var(--primary-color); }
-.doctor-btn:hover { background: var(--primary-color); color: vwhite; border: 1px solid var(--primary-color); }
+.doctor-btn:hover { background: var(--primary-color); color: white; border: 1px solid var(--primary-color); }
 
 /* --- Estilos para FAQ --- */
 .faq-accordion {
@@ -151,6 +151,7 @@ li{ font-size: 1.1rem; }
     margin-top: 0;
     padding-bottom: 18px;
 }
+
 
 
 
