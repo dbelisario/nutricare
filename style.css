@@ -1,5 +1,40 @@
 /* ... (Todo el CSS anterior sigue igual hasta la sección de Resultados y Médicos) ... */
 /* --- General & Variables --- */
+
+@font-face {
+    font-family: 'GothamRnd';
+    src: url('https://www.nutricare.co.cr/fonts/GothamRnd-Bold.woff2') format('woff2'),
+        url('https://www.nutricare.co.cr/fonts/GothamRnd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamRnd';
+    src: url('https://www.nutricare.co.cr/fonts/GothamRnd-Book.woff2') format('woff2'),
+        url('https://www.nutricare.co.cr/fonts/GothamRnd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamRnd';
+    src: url('https://www.nutricare.co.cr/fonts/GothamRnd-BookItalic.woff2') format('woff2'),
+        url('https://www.nutricare.co.cr/fonts/GothamRnd-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamRnd';
+    src: url('https://www.nutricare.co.cr/fonts/GothamRnd-Medium.woff2') format('woff2'),
+        url('https://www.nutricare.co.cr/fonts/GothamRnd-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
 :root {
     --bghero: linear-gradient(110deg, rgb(1, 152, 210) 0%, rgba(61, 176, 167, 1) 50%, rgb(126, 170, 69) 100%);
     --bgsintomas: linear-gradient(110deg, rgb(48, 132, 182) 0%, rgb(0, 195, 255) 100%);
@@ -156,6 +191,7 @@ li{ font-size: 1.1rem; }
     margin-top: 0;
     padding-bottom: 18px;
 }
+
 
 
 
