@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let severity, message, resultClass;
 
-        if (totalScore = 0) {
+        if (totalScore <= 0) {
             severity = "SIN SINTOMATOLOGÍA";
             message = "Tus resultados indican que no presentas síntomas. Es una buena señal, pero es importante seguir monitoreando tu salud.";
             resultClass = 'results-optimo';
@@ -180,5 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
     startQuizBtn.addEventListener('click', startQuiz);
     prevBtn.addEventListener('click', handlePrev);
 });
+
 
 
