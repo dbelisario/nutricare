@@ -13,6 +13,7 @@
     --warning-color: #dae151;
     --danger-color: #f8d7da;
     --bgfooter: #1d4488;
+    --btn-return-hover: #a3d365;
     --font-family: 'GothamRnd', sans-serif;;
 }
 
@@ -94,6 +95,10 @@ li{ font-size: 1.1rem; }
 .doctor-btn { background: white; color: var(--primary-color); border: 1px solid var(--primary-color); }
 .doctor-btn:hover { background: var(--primary-color); color: white; border: 1px solid var(--primary-color); }
 
+.btn-returns {display:flex; justify-content: center; padding: 2rem 0;}
+.btn-resultados {background: var(--success-color); color: white;}
+.btn-resultados:hover {background: var(--btn-return-hover); }
+
 /* --- Estilos para FAQ --- */
 .faq-accordion {
     max-width: 800px;
@@ -151,6 +156,7 @@ li{ font-size: 1.1rem; }
     margin-top: 0;
     padding-bottom: 18px;
 }
+
 
 
 
