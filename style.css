@@ -6,14 +6,14 @@
     --primary-color: #3382c4; /* Azul profesional y moderno */
     --btn-hover: #06b4e9;
     --secondary-color: #0dcaf0; /* Cian para acentos */
-    --dark-color: #1d4488;
+    --dark-color: #212529;
     --light-color: #f8f9fa;
     --success-congratulations: #1574b6;
     --success-color: #93c843;
     --warning-color: #dae151;
     --danger-color: #f8d7da;
     --bgfooter: #1d4488;
-    --font-family: 'Lato', sans-serif;
+    --font-family: 'GothamRnd', sans-serif;;
 }
 
 html { scroll-behavior: smooth; }
@@ -39,7 +39,7 @@ li{ font-size: 1.1rem; }
 .main-header .container { display: flex; justify-content: space-between; align-items: center; }
 .main-header .logo { font-size: 1.75rem; font-weight: 700; color: var(--primary-color); }
 .main-header nav a { margin-left: 20px; text-decoration: none; color: var(--dark-color); font-weight: 700; }
-.main-footer { background: var(--dark-color); color: #fff; text-align: center; padding: 1.5rem 0; }
+.main-footer { background: var(--bgfooter); color: #fff; text-align: center; padding: 1.5rem 0; }
 .main-footer .disclaimer { font-size: 0.8rem; opacity: 0.7; }
 .social-icons { margin-bottom: 1rem; }
 .social-icons a { color: white; text-decoration: none; margin: 0 10px; font-weight: bold; border: 1px solid white; border-radius: 50%; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; }
@@ -58,7 +58,7 @@ li{ font-size: 1.1rem; }
 .symptom-list li { margin-bottom: 0.5rem; }
 
 .btn { display: inline-block; background: var(--primary-color); color: #fff; padding: 12px 30px; border: none; border-radius: 50px; cursor: pointer; font-size: 1rem; font-weight: 700; text-decoration: none; transition: all 0.3s ease; }
-.btn:hover { background-color: var(--btn-hover)  opacity: 0.85; transform: translateY(-2px); }
+.btn:hover { background-color: var(--btn-hover); opacity: 0.85; transform: translateY(-2px); }
 .btn-large { padding: 15px 40px; font-size: 1.2rem; }
 .btn-secondary { background-color: #6c757d; }
 
@@ -78,12 +78,12 @@ li{ font-size: 1.1rem; }
 #prev-btn { visibility: hidden; }
 
 /* --- Resultados y Médicos --- */
-.results-panel { padding: 2rem; margin-top: 2rem; border-radius: 12px; text-align: center; }
-.results-panel h2 { font-size: 3rem; margin-bottom: 0; }
+.results-panel { padding: 2rem 7rem; margin-top: 2rem; border-radius: 12px; text-align: center; }
+.results-panel h2 { font-size: 3rem; margin-top: 15px; margin-bottom: 0; }
 .results-panel h3 { font-size: 1.5rem; margin-top: 0; margin-bottom: 1rem; }
 .results-optimo { background-color: var(--success-congratulations); border: 1px solid #1574b6; }
 .results-mild { background-color: var(--success-color); border: 1px solid #93c843; }
-.results-moderate { background-color: var(--warning-color); border: 1px solid #dae151; }
+.results-moderate { background-color: var(--warning-color); border: 1px solid #dae151; border-radius: 12px;}
 .results-severe { background-color: var(--danger-color); border: 1px solid #f5c2c7; }
 .doctors-section { padding: 3rem 0; background: var(--light-color); }
 .doctors-list { display: flex; gap: 30px; justify-content: center; margin-top: 2rem; flex-wrap: wrap; }
