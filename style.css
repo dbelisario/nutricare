@@ -53,7 +53,7 @@ li{ font-size: 1.1rem; }
 #quiz-section { display:none;}
 .content-section h2 { text-align: center; font-size: 2rem; margin-bottom: 2rem; }
 .content-section h3 { text-align: center; font-size: 1.7rem; margin-bottom: 2rem; }
-.bg-light { background-color: var(--bgsintomas); color: white;}
+.bg-light { background: var(--bgsintomas); color: white;}
 .symptom-list { list-style-type: '✓ '; padding-left: 20px; max-width: 600px; margin: 1.5rem auto; }
 .symptom-list li { margin-bottom: 0.5rem; }
 
@@ -149,6 +149,7 @@ li{ font-size: 1.1rem; }
     margin-top: 0;
     padding-bottom: 18px;
 }
+
 
 
 
