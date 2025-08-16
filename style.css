@@ -26,7 +26,6 @@ li{ font-size: 1.1rem; }
 #quiz-header {
     padding: 20px 0;
     text-align: center;
-    border-bottom: 1px solid #dee2e6;
 }
 
 #quiz-header .logo {
@@ -151,6 +150,7 @@ li{ font-size: 1.1rem; }
     margin-top: 0;
     padding-bottom: 18px;
 }
+
 
 
 
