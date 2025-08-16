@@ -1,14 +1,18 @@
 /* ... (Todo el CSS anterior sigue igual hasta la sección de Resultados y Médicos) ... */
 /* --- General & Variables --- */
 :root {
-    --primary-color: #0d6efd; /* Azul profesional y moderno */
+    --bghero: linear-gradient(110deg, rgb(1, 152, 210) 0%, rgba(61, 176, 167, 1) 50%, rgb(126, 170, 69) 100%);
+    --bgsintomas: linear-gradient(110deg, rgb(48, 132, 182) 0%, rgb(0, 195, 255) 100%);
+    --primary-color: #3382c4; /* Azul profesional y moderno */
+    --btn-hover: #06b4e9;
     --secondary-color: #0dcaf0; /* Cian para acentos */
-    --dark-color: #212529;
+    --dark-color: #1d4488;
     --light-color: #f8f9fa;
     --success-congratulations: #1574b6;
     --success-color: #93c843;
     --warning-color: #dae151;
     --danger-color: #f8d7da;
+    --bgfooter: #1d4488;
     --font-family: 'Lato', sans-serif;
 }
 
@@ -41,20 +45,20 @@ li{ font-size: 1.1rem; }
 .social-icons a { color: white; text-decoration: none; margin: 0 10px; font-weight: bold; border: 1px solid white; border-radius: 50%; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; }
 
 /* --- Secciones --- */
-.hero { background: var(--light-color); padding: 4rem 0; text-align: center; border-bottom: 1px solid #dee2e6; }
-.hero h1 { font-size: 2.5rem; margin-bottom: 1rem; max-width: 800px; margin-left: auto; margin-right: auto; }
-.hero p { font-size: 1.4rem; color: #6c757d; margin-bottom: 2rem; }
+.hero { background: var(--bghero); padding: 4rem 0; text-align: center; border-bottom: 1px solid #dee2e6; }
+.hero h1 { font-size: 2.5rem; margin-bottom: 1rem; max-width: 800px; margin-left: auto; margin-right: auto; color: white}
+.hero p { font-size: 1.4rem; color: white; margin-bottom: 2rem; }
 
 .content-section { padding: 3rem 0; }
 #quiz-section { display:none;}
 .content-section h2 { text-align: center; font-size: 2rem; margin-bottom: 2rem; }
 .content-section h3 { text-align: center; font-size: 1.7rem; margin-bottom: 2rem; }
-.bg-light { background-color: var(--light-color); }
+.bg-light { background-color: var(--bgsintomas); color: white;}
 .symptom-list { list-style-type: '✓ '; padding-left: 20px; max-width: 600px; margin: 1.5rem auto; }
 .symptom-list li { margin-bottom: 0.5rem; }
 
 .btn { display: inline-block; background: var(--primary-color); color: #fff; padding: 12px 30px; border: none; border-radius: 50px; cursor: pointer; font-size: 1rem; font-weight: 700; text-decoration: none; transition: all 0.3s ease; }
-.btn:hover { opacity: 0.85; transform: translateY(-2px); }
+.btn:hover { background-color: var(--btn-hover)  opacity: 0.85; transform: translateY(-2px); }
 .btn-large { padding: 15px 40px; font-size: 1.2rem; }
 .btn-secondary { background-color: #6c757d; }
 
@@ -145,6 +149,7 @@ li{ font-size: 1.1rem; }
     margin-top: 0;
     padding-bottom: 18px;
 }
+
 
 
 
