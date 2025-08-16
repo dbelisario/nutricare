@@ -84,7 +84,8 @@ li{ font-size: 1.1rem; }
 .results-mild { background-color: var(--success-color); border: 1px solid #93c843; }
 .results-moderate { background-color: var(--warning-color); border: 1px solid #dae151; border-radius: 12px;}
 .results-severe { background-color: var(--danger-color); border: 1px solid #f5c2c7; }
-.doctors-section { padding: 3rem 0; background: var(--light-color); }
+.doctors-section { padding: 3rem 0; background: var(--bghero); }
+.doctors-section h2, .doctors-section p{ color: white; }
 .doctors-list { display: flex; gap: 30px; justify-content: center; margin-top: 2rem; flex-wrap: wrap; }
 .doctor-card { text-align: center; background: #fff; border: 1px solid #dee2e6; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
 .doctor-card img { border-radius: 50%; margin-bottom: 1rem; width: 100px; height: 100px; }
@@ -150,6 +151,7 @@ li{ font-size: 1.1rem; }
     margin-top: 0;
     padding-bottom: 18px;
 }
+
 
 
 
