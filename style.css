@@ -6,8 +6,8 @@
     --dark-color: #212529;
     --light-color: #f8f9fa;
     --success-congratulations: #a6f7d2;
-    --success-color: #d1e7dd;
-    --warning-color: #fff3cd;
+    --success-color: #93c843;
+    --warning-color: #dae151;
     --danger-color: #f8d7da;
     --font-family: 'Lato', sans-serif;
 }
@@ -145,5 +145,6 @@ li{ font-size: 1.1rem; }
     margin-top: 0;
     padding-bottom: 18px;
 }
+
 
 
