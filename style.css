@@ -5,7 +5,7 @@
     --secondary-color: #0dcaf0; /* Cian para acentos */
     --dark-color: #212529;
     --light-color: #f8f9fa;
-    --success-congratulations: #a6f7d2;
+    --success-congratulations: #1574b6;
     --success-color: #93c843;
     --warning-color: #dae151;
     --danger-color: #f8d7da;
@@ -77,9 +77,9 @@ li{ font-size: 1.1rem; }
 .results-panel { padding: 2rem; margin-top: 2rem; border-radius: 12px; text-align: center; }
 .results-panel h2 { font-size: 3rem; margin-bottom: 0; }
 .results-panel h3 { font-size: 1.5rem; margin-top: 0; margin-bottom: 1rem; }
-.results-optimo { background-color: var(--success-congratulations); border: 1px solid #a6f7d2; }
-.results-mild { background-color: var(--success-color); border: 1px solid #b6d7c3; }
-.results-moderate { background-color: var(--warning-color); border: 1px solid #ffe69c; }
+.results-optimo { background-color: var(--success-congratulations); border: 1px solid #1574b6; }
+.results-mild { background-color: var(--success-color); border: 1px solid #93c843; }
+.results-moderate { background-color: var(--warning-color); border: 1px solid #dae151; }
 .results-severe { background-color: var(--danger-color); border: 1px solid #f5c2c7; }
 .doctors-section { padding: 3rem 0; background: var(--light-color); }
 .doctors-list { display: flex; gap: 30px; justify-content: center; margin-top: 2rem; flex-wrap: wrap; }
@@ -145,6 +145,7 @@ li{ font-size: 1.1rem; }
     margin-top: 0;
     padding-bottom: 18px;
 }
+
 
 
 
