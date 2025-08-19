@@ -194,9 +194,10 @@ li{ font-size: 1.1rem; }
 
 @media screen and (max-width: 767px) {
     .results-panel { padding: 2rem; }
-    .btn-returns { flex-direction: column; }
+    .btn-returns { flex-direction: column; padding: 2rem 1.5rem; gap: 1.5rem; }
 
 }
+
 
 
 
