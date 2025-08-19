@@ -192,6 +192,12 @@ li{ font-size: 1.1rem; }
     padding-bottom: 18px;
 }
 
+@media screen and (max-width: 767px) {
+    .results-panel { padding: 2rem; }
+    .btn-returns { flex-direction: column; }
+
+}
+
 
 
 
